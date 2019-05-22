@@ -5,14 +5,13 @@ import (
 	"net/http"
 
 	"github.com/aayushrangwala/User-Microservice/util"
-
-	"github.com/gorilla/mux"
 )
 
 // GetUserProfile return the profile of the user
 func GetUserProfile(w http.ResponseWriter, r *http.Request) {
-	vars := mux.Vars(r)
-	userName := vars["user"]
+	// vars := mux.Vars(r)
+	// userName := vars["user"]
+	userName := r.Header.Get("Username")
 	userDet := &util.UserDetails{
 		Name:  userName,
 		Dob:   "01/01/2000",

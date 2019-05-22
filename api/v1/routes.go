@@ -21,7 +21,7 @@ var routes = Routes{
 	Route{
 		"GetUserProfile",
 		"GET",
-		"/user/profile/{user}",
+		"/user/profile",
 		v1.GetUserProfile,
 	},
 	Route{
