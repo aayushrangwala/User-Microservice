@@ -1,4 +1,4 @@
-[![Coverage Status](https://coveralls.io/repos/github/aayushrangwala/Authentication-Service/badge.svg?branch=master)](https://coveralls.io/github/aayushrangwala/Authentication-Service?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/aayushrangwala/User-Microservice/badge.svg?branch=master)](https://coveralls.io/github/aayushrangwala/User-Microservice?branch=master)
 
 # Go-Microservices-task
 
