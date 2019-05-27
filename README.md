@@ -1,3 +1,5 @@
+[![Coverage Status](https://coveralls.io/repos/github/aayushrangwala/Authentication-Service/badge.svg?branch=master)](https://coveralls.io/github/aayushrangwala/Authentication-Service?branch=master)
+
 # Go-Microservices-task
 
 A sample Microservices implementation task in Go
