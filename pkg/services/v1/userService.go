@@ -9,8 +9,6 @@ import (
 
 // GetUserProfile returns the profile of the user
 func GetUserProfile(w http.ResponseWriter, r *http.Request) {
-	// vars := mux.Vars(r)
-	// userName := vars["user"]
 	userName := r.Header.Get("Username")
 	userDet := &util.UserDetails{
 		Name:  userName,
@@ -26,7 +24,7 @@ func GetUserProfile(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-// GetMicroserviceName returns the name of the service
+// GetMicroserviceName is the unsecured API and will send the microservice name
 func GetMicroserviceName(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
 	w.WriteHeader(http.StatusOK)
