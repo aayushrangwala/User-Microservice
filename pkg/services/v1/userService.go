@@ -2,6 +2,7 @@ package v1
 
 import (
 	"encoding/json"
+	"log"
 	"net/http"
 
 	"github.com/aayushrangwala/User-Microservice/util"
@@ -28,5 +29,8 @@ func GetUserProfile(w http.ResponseWriter, r *http.Request) {
 func GetMicroserviceName(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
 	w.WriteHeader(http.StatusOK)
-	json.NewEncoder(w).Encode("User Microservice")
+	err := json.NewEncoder(w).Encode("User Microservice")
+	if err != nil {
+		log.Fatal("Error encoding or returning the value", err)
+	}
 }
