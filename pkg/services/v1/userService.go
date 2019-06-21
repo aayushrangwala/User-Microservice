@@ -7,7 +7,7 @@ import (
 	"github.com/aayushrangwala/User-Microservice/util"
 )
 
-// GetUserProfile return the profile of the user
+// GetUserProfile returns the profile of the user
 func GetUserProfile(w http.ResponseWriter, r *http.Request) {
 	// vars := mux.Vars(r)
 	// userName := vars["user"]
@@ -26,7 +26,7 @@ func GetUserProfile(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-// GetMicroserviceName test
+// GetMicroserviceName returns the name of the service
 func GetMicroserviceName(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
 	w.WriteHeader(http.StatusOK)
