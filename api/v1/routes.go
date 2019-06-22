@@ -30,4 +30,10 @@ var routes = Routes{
 		"/microservice/name",
 		v1.GetMicroserviceName,
 	},
+	Route{
+		"GetUserEmail",
+		"GET",
+		"/user/email",
+		v1.GetUserEmail,
+	},
 }

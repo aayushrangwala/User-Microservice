@@ -34,3 +34,13 @@ func GetMicroserviceName(w http.ResponseWriter, r *http.Request) {
 		log.Fatal("Error encoding or returning the value", err)
 	}
 }
+
+// GetUserEmail returns the email of the user
+func GetUserEmail(w http.ResponseWriter, r *http.Request) {
+	userEmail := "ex@ex.com"
+	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
+	w.WriteHeader(http.StatusOK)
+	if err := json.NewEncoder(w).Encode(userEmail); err != nil {
+		panic(err)
+	}
+}
